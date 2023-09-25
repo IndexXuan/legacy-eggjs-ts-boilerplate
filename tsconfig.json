@@ -1,0 +1,11 @@
+{
+  "extends": "@eggjs/tsconfig",
+  "compilerOptions": {
+    "noUncheckedIndexedAccess": true
+  },
+  "exclude": [
+    "app/public",
+    "app/views",
+    "node_modules*"
+  ]
+}

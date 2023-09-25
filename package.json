@@ -1,0 +1,48 @@
+{
+  "name": "legacy-eggjs-ts-boilerplate",
+  "version": "0.1.0",
+  "description": "legacy-eggjs-ts-boilerplate",
+  "private": true,
+  "egg": {
+    "typescript": true,
+    "declarations": true
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-legacy-eggjs-ts-boilerplate",
+    "stop": "egg-scripts stop --title=egg-server-legacy-eggjs-ts-boilerplate",
+    "dev": "egg-bin dev",
+    "lint": "eslint . --ext .ts --fix",
+    "test": "egg-bin test",
+    "cov": "egg-bin cov",
+    "tsc": "ets && tsc -p tsconfig.json",
+    "debug": "egg-bin debug",
+    "clean": "ets clean"
+  },
+  "dependencies": {
+    "egg": "^2.37.0",
+    "egg-scripts": "^2.17.0"
+  },
+  "devDependencies": {
+    "@eggjs/tsconfig": "^1.3.3",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18",
+    "@types/supertest": "^2.0.12",
+    "egg-bin": "^6.5.2",
+    "egg-mock": "^5.10.0",
+    "eslint": "^8.50.0",
+    "eslint-config-egg": "^13.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:IndexXuan/legacy-eggjs-ts-boilerplate.git"
+  },
+  "author": "IndexXuan",
+  "license": "MIT"
+}
