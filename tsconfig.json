@@ -1,7 +1,8 @@
 {
   "extends": "@eggjs/tsconfig",
   "compilerOptions": {
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": true,
+    "noPropertyAccessFromIndexSignature": true
   },
   "exclude": [
     "app/public",

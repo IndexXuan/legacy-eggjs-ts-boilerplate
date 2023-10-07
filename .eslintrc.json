@@ -4,7 +4,9 @@
     "project": "./tsconfig.json"
   },
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "dot-notation": "off",
+    "@typescript-eslint/dot-notation": "error"
   },
   "plugins": [
     "prettier"
