@@ -1,6 +1,6 @@
 import type { EggAppConfig, EggAppInfo, PowerPartial } from 'egg';
 
-export default (appInfo: EggAppInfo) => {
+export default (appInfo: EggAppInfo): PowerPartial<EggAppConfig> => {
   const config = {} as PowerPartial<EggAppConfig>;
 
   // override config from framework / plugin
@@ -12,7 +12,7 @@ export default (appInfo: EggAppInfo) => {
 
   // add your special config in here
   const bizConfig = {
-    sourceUrl: `https://github.com/eggjs/examples/tree/master/${appInfo.name}`,
+    sourceUrl: 'https://github.com/IndexXuan/legacy-eggjs-ts-boilerplate',
   };
 
   // the return config will combines to EggAppConfig

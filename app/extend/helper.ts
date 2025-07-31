@@ -6,7 +6,7 @@ export default {
     try {
       return JSON.parse(maybeJson);
     } catch (e) {
-      this.ctx.logger.error('maybeJson:', maybeJson);
+      this.ctx.logger.error('maybeJson:', maybeJson, e);
       return {};
     }
   },
