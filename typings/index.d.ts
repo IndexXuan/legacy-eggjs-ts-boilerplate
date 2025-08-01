@@ -1,5 +1,5 @@
+import '@total-typescript/ts-reset';
 import 'egg';
-import { Context } from 'egg';
 
 declare module 'egg' {
   interface Context {
